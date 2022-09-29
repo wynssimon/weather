@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="druppels.mp4" type="video/mp4">
+    </video>
+    <div class="foreground">
+        <div class="location">
+            <h1 class="location-timezone">Locatie</h1>
+        </div>
+        <div class="temperature">
+            <div class="degree-section">
+                <h2 class="temperature-degree"></h2>
+            </div>
+            <div class="gevoelssectie">
+                <div class="gevoelstemperatuur"></div>
+            </div>
+        </div>
+        <div class="feeling-span">
+            <img class="icon"></img>
+        </div>
+        <div class="info">
+            <div class="vocht">
+                <span>Humidity</span>
+                <div class="vochtigheid"></div>
+            </div>
+            <div class="wind">
+                <span>Wind</span>
+                <div class="windrichting"></div>
+                <div class="windsnelheid"></div>
+            </div>
+        </div>
+    </div>
+    <div class="foreground2">
+        <div class="location2">
+            <h1 class="locationTimezone2">Location</h1>
+        </div>
+        <div class="zon">
+            <span>Sun</span>
+            <div class="zon-opkomst"></div>
+            <div class="zon-ondergang"></div>
+        </div>
+        <div class="maan">
+            <span>Moon</span>
+            <div class="maan-opkomst"></div>
+            <div class="maan-ondergang"></div>
+        </div>
+    </div>
+    <button class="astronomy">Astronomy</button>
+    <button class="nu">Now</button>
+    <script src="app.js"></script>
+</body>
+</html>

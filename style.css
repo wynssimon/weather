@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgb(47, 149, 163), rgb(48, 62, 143));
+}
+.foreground, .foreground2{
+    height:50vh;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(47, 149, 163, 0.30), rgba(48, 62, 143, 0.30));
+    font-family: sans-serif;
+    color:white;
+    font-size: 25px;
+    gap:15px;
+    margin-bottom: 15px;
+}
+.foreground2{
+    display: none;
+}
+.location, .temperature, .info, .gevoelssectie, .zon, .maan{
+    height:40vh;
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.zon, .maan{
+    flex-direction: column;
+    height:15vh;
+}
+
+.vocht{
+    flex-direction: column;
+    display: flex;
+}
+.temperature{
+    flex-direction: column;
+    height:10vh;
+}
+.degree-section, .snelheid-section{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+.snelheid-section{
+    cursor:auto;
+}
+.wind, .vocht{
+    height:15vh;
+    width:100%;
+}
+.windrichting, .vochtigheid{
+    margin-top: 12px;
+}
+span{
+    text-decoration: underline;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 70%;
+    z-index: -1;
+    filter:brightness(100%);
+}
+img{
+    width:120%;
+}
+button{
+    background: #2F97EB;
+    border:0px;
+    width:20%;
+    height:10vh;
+    border-radius: 25px;
+    margin:10px;
+    cursor:pointer;
+    font-size: 25px;
+}
+button:hover{
+    background-color: white;
+    color:#2F97EB;
+    font-weight: 600;
+}
